@@ -17,7 +17,7 @@ body{
     margin: 0 auto;
 }
 
-.swiper-button-prev ::after{
+.swiper-button-prev::after {
     font-size: 25px;
 
 }
@@ -25,11 +25,11 @@ body{
     font-size: 25px;
 }
 
-.swiper-button-next{
+.swiper-button-next {
     color: red;
 
 }
-.swiper-button-prev{
+.swiper-button-prev {
     color: red;
 
 }
@@ -43,7 +43,7 @@ body{
 .swiper.pagination-bullet-active{
     background-color: red;
 }
-.menu{
+.menu {
     position: absolute;
     top: 20px;
     left: 0;
@@ -53,17 +53,17 @@ body{
     z-index: 1000;
 }
 
-.navbar{
+.navbar {
     display: flex;
 
 }
 
-.menu-1{
-    margin-right: 100px;
+.menu-1 {
+    margin-right: 180px;
 }
 
-.menu-2{
-    margin-left: 100px;
+.menu-2 {
+    margin-left: 180px;
     display: flex;
     align-items: center;
 }
@@ -76,17 +76,17 @@ body{
     width: 150px;
 }
 
-.socials{
+.sociales {
     display: flex;
 
 }
 
-.social{
+.social {
     margin: 0 10px;
     height: 40px;
     width: 40px;
     border: 1px solid #db2418;
-    border-radius: 20%;
+    border-radius: 50%;
     
 }
 
@@ -99,19 +99,19 @@ body{
 
 }
 
-.menu .navbar ul li{
+.menu .navbar ul li {
     position: relative;
     float: left;
 
 }
-.menu .navbar ul li{
+.menu .navbar ul li a {
     font-size: 18px;
     padding: 20px;
     color: white;
     display: block;
 }
 
-.menu .navbar ul li a:hover{
+.menu .navbar ul li a:hover {
     color: pink;
 }
 
@@ -226,6 +226,10 @@ body{
     color: #FFFFFF;
 }
 
+.tabs input[type="radio"]:checked + label + .tab {
+    display: block;
+}
+
 .product {
     display: flex;
     align-items: center;
@@ -308,7 +312,7 @@ body{
 .info-txt h2{
     font-size: 75px;
 
-    color: #a7a7a7;
+    color: #FFFFFF;
 
     font-weight: 800;
     text-transform: uppercase;
@@ -324,7 +328,7 @@ body{
 .btn-2 {
     display: inline-block;
     padding: 15px 35px;
-    background-color: #DB241B;
+    background-color: red;
     color: #FFFFFF;
     font-weight: 800;
     text-transform: uppercase;
@@ -332,5 +336,240 @@ body{
 }
 
 .btn-2:hover {
-    background-color: #DB241B;
+    background-color: greenyellow;
 }
+
+.horario{
+    padding: 100px 0px;
+    background-color: #0d0d0d;
+
+
+}
+
+.horario-info h2{
+    font-size: 75px;
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 50px
+}
+
+.horario-txt{
+    display: flex;
+    justify-content: space-around;
+}
+
+.txt{
+    color: #FFFFFF;
+
+}
+
+
+
+.txt h4{
+font-size: 18px;
+color: #a7a7a7;
+margin-bottom: 30px;
+
+
+}
+
+.txt p{
+    font-size:  18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.map{
+    filter: grayscale(100%) invert(92%) contrast(93%);
+    
+}
+
+.footer{
+    padding: 100px 0px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.links h4{
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.links ul li a{
+    color: #FFFFFF;
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+@media(max-width: 991px) {
+    .menu {
+        padding: 20px;
+        justify-content: space-between;
+
+    }
+    .menu-2 {
+        display: none;
+    }
+    .logo-1 {
+        width: 100px;
+    }
+
+    .logo-2 {
+        width: 0;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar  {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #555555;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: block; 
+    }
+    .header-content {
+        padding: 30px;
+        margin-top: 100px;
+
+
+    }
+
+    .slaider {
+        flex-direction: column;
+    }
+    .slaider-txt{
+        margin-left: 0;
+        width: 100;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .slaider-txt h1 {
+        font-size: 50px;
+    }
+
+    .slaider-txt p {
+        font-size: 16px;
+
+    }
+    
+    .btn-1 {
+        padding: 10px 25px;
+        font-size: 14px;
+
+
+    }
+
+    .slaider-img{
+        width: 100;
+        text-align: center;
+    }
+
+    .slaider-img img{
+        margin-right: 0px;
+        width: 300px;
+    }
+
+    .swiper-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-bullets,.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        bottom:  -7px;
+    }
+
+    tabs {
+        padding: 50px 30px;
+    }
+
+    .tab label{
+        width: 33%;
+    }
+
+    .info{
+        padding: 30px;
+        flex-direction: column;
+
+    }
+
+    .info-img{
+        width: 100%;
+        text-align: center;
+    }
+
+    .txt-img img{
+        width: 400px;
+        height: 200px;
+        margin-bottom: 25px;
+    }
+
+    .info-txt{
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .info-txt h2{
+        font-size: 50px;
+    }
+
+    .info p{
+        font-size: 16px;
+    }
+
+    .btn-1{
+        font-size: 16px;
+
+    }
+
+    .horario{
+        padding: 30px ;
+        text-align: center;
+    }
+
+    .horario-info h2{
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+
+    .horario-txt{
+        flex-direction: column;
+    }
+
+    .sociales{
+        justify-content: center;
+    }
+
+    .social img{
+        margin: 8px 0 0 0;
+    }
+
+    .footer {
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+
+
+    }
+    .links h4{
+        margin: 25px 0px 10px 0px;
+
+    }
+}
+
+
